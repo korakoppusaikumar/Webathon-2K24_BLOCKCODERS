@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Crime Reporting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wildlife Crime Reporting</h1>
+        <p>
+            Engaging local communities, conservation organizations, and citizen scientists in wildlife crime reporting and monitoring efforts is crucial for effective conservation. By leveraging mobile applications, crowd-sourced data collection, and community-based surveillance initiatives, we can foster collaboration and collective action against wildlife crime.
+        </p>
+        <form action="#" method="POST">
+            <label for="reporter">Your Name:</label>
+            <input type="text" id="reporter" name="reporter" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="location">Location of Incident:</label>
+            <input type="text" id="location" name="location" required>
+            
+            <label for="description">Description of Incident:</label>
+            <textarea id="description" name="description" rows="6" required></textarea>
+            
+            <input type="submit" value="Submit Report">
+        </form>
+    </div>
+</body>
+</html>
